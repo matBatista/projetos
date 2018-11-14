@@ -6,8 +6,10 @@ talvez em cada projeto tenha um readme</b>
 
 Aqui vou deixando alguns trabalhos, testes, ou futuros projetos.
 
-as vezes em **javaScript** </br>
-talvez em **C#** </br>
+as vezes em **javaScript** 
+
+talvez em **C#** 
+
 Até mesmo em **React** que estou aprendendo.
 
 Novas linguagens estão sendo aprendidas e com isso novos testes e projetos tem que ser feitos.
