@@ -1,8 +1,9 @@
 # projetos e testes.
 <b>deixei assim em letra minuscula para ficar mais cool
-talvez em cada projeto tenha um readme</b> </br>
+talvez em cada projeto tenha um readme</b>
+
 *não se preocupe com oque está escrito aqui, são apenas testes de markdown*
-</br>
+
 Aqui vou deixando alguns trabalhos, testes, ou futuros projetos.
 
 as vezes em **javaScript** </br>
