@@ -4,9 +4,9 @@ talvez em cada projeto tenha um readme</b> </br>
 *não se preocupe com oque está escrito aqui, são apenas testes de markdown*
 </br>
 Aqui vou deixando alguns trabalhos, testes, ou futuros projetos.
-
-as vezes em **javaScript**
-talvez em **C#**
+</br>
+as vezes em **javaScript** </br>
+talvez em **C#** </br>
 Até mesmo em **React** que estou aprendendo.
 
 Novas linguagens estão sendo aprendidas e com isso novos testes e projetos tem que ser feitos.
