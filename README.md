@@ -2,14 +2,11 @@
 <b>deixei assim em letra minuscula para ficar mais cool
 talvez em cada projeto tenha um readme</b>
 
-*não se preocupe com oque está escrito aqui, são apenas testes de markdown*
-
+*não se preocupe com oque está escrito aqui, são apenas testes de markdown*  <br>
 Aqui vou deixando alguns trabalhos, testes, ou futuros projetos.
 
-as vezes em **javaScript** 
-
-talvez em **C#** 
-
+as vezes em **javaScript** <br>
+talvez em **C#** <br>
 Até mesmo em **React** que estou aprendendo.
 
 Novas linguagens estão sendo aprendidas e com isso novos testes e projetos tem que ser feitos.
