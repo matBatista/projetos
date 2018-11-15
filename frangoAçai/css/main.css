@@ -1,0 +1,51 @@
+header nav{
+    background: #ffb654;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+header{
+    margin-bottom: 60px;
+}
+
+a, a:active, a:visited{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #e99528;
+    text-decoration: none;
+}
+.btn-primary { 
+    margin-top: 20px;
+    background: #e99528;
+    color: black;
+    border-color: black
+}
+.btn-primary:hover{ 
+    margin-top: 18px;
+    background: #ecba77;
+    color: black;
+    border-color: black;
+}
+.jumbotron{
+    background: none;
+}
+.card{
+    margin: 20px 10px;
+}
+#contato{
+    margin-top: 20px;
+}
+.display-4{
+    font-size: 45px;
+}
+#contato p{
+    font-size: 20px;
+    font-weight: 300;
+}
+footer p{
+    font-size: 14px;
+    font-weight: 150;
+    text-align: center;
+    margin-top: 30px;
+}
