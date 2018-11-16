@@ -49,3 +49,13 @@ footer p{
     text-align: center;
     margin-top: 30px;
 }
+.tab-pane {
+    margin: 30px 10px;
+}
+.tab-pane .card{
+    margin: 0px;
+}
+.tab-pane .card-header{
+    font-size: 24px;
+    font-weight: 130;
+}
