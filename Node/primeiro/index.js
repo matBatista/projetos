@@ -10,11 +10,23 @@ app.get('/home', function(req,res){
     res.render('../View/home')
 });
 
+app.get('/form/:nome/:sobrenome?', function(req,res){
+    res.send('<h1> ' + req.params.nome +  ' ' + (req.params.sobrenome == null ? '' : req.params.sobrenome )+' </h1>');
+});
+
 app.get('/', function(req,res){
     res.json({name: "Matheus", idade: 25});
 });
 
+app.get('/cadastro', function(req,res){
+    let name = req.query["nome"];
+    let sobrenome = req.query["sobrenome"];
+    if(name){
+    res.send('<h1> ' + name + sobrenome +' </h1>');
+    }else
+    {res.send('');}
+});
 
 app.listen(3000,function (){
-    console.log('Executando na porta 3000');
+    console.log('Executando automatico com nodemon');
 });
