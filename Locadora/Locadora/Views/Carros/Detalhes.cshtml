@@ -1,0 +1,55 @@
+﻿@model Locadora.Models.Carro
+
+@{
+    ViewData["Title"] = "Detalhes";
+}
+
+<h1>Detalhes Carro</h1>
+
+<h4>  @Html.DisplayFor(model => model.modelo) </h4>
+<hr />
+<hr />
+<hr />
+<div class="row">
+    <dl class="row">
+        <dt class="col-sm-2">
+            Marca:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.marca)
+        </dd>
+        <dt class="col-sm-2">
+            Modelo:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.modelo)
+        </dd>
+        <dt class="col-sm-2">
+            Ano:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ano)
+        </dd>
+        <dt class="col-sm-2">
+            Placa
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.placa)
+        </dd>
+        <dt class="col-sm-2">
+            Montadora
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.montadora)
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Editar" asp-route-id="@Model.id"> Editar </a>
+    <a asp-action="Index"> Voltar </a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Locadora.Models.Carro>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Carros para Alugar</h1>
+    <br />
+    <div class="text-right"> <a asp-action="Criar">Criar</a> </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Marca
+                </th>
+                <th>
+                    Modelo
+                </th>
+                <th>
+                    Ano
+                </th>
+                <th>
+                    Placa
+                </th>
+                <th>
+                    Montadora
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.marca)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.modelo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ano)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.placa)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.montadora)
+                    </td>
+                    <td>
+                        <a asp-action="Detalhes" asp-route-id="@item.id">Detalhes</a> |
+                        <a asp-action="Editar" asp-route-id="@item.id">Editar</a> |
+                        <a asp-action="Delete" asp-route-id="@item.id">Deletar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>

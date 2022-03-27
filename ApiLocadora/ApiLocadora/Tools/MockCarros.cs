@@ -19,15 +19,15 @@ namespace ApiLocadora.Tools
         public void AddCarrosIniciais()
         {
 
-            List<Carro> Garagem = new List<Carro>
+            List<Carro> Locadora = new List<Carro>
             {
-                new Carro { Marca = "Volvo", Modelo = "ESL 3000", Ano = 2000, Link = "" },
-                new Carro { Marca = "BMW", Modelo = "A3", Ano= 2020, Link = "" },
-                new Carro { Marca = "Mitsubish", Modelo = "Lancer", Ano = 2015, Link  =""},
-                new Carro { Marca = "Honda", Modelo = "Civic", Ano = 2022, Link  = "" }
+                new Carro { marca = "Volvo", modelo = "ESL 3000", ano = 2000, link = "", placa = "E779323",montadora = "GM"},
+                new Carro { marca = "BMW", modelo = "A3", ano= 2020, link = "" ,placa = "382782DSA", montadora = "China"},
+                new Carro { marca = "Mitsubish", modelo = "Lancer", ano = 2015, link  ="", placa = "PLC2015", montadora = "Japon"},
+                new Carro { marca = "Honda", modelo = "Civic", ano = 2022, link  = "", placa = "MAT07", montadora = "Honda"}
             };
 
-            _context.Carros.AddRange(Garagem);
+            _context.Carros.AddRange(Locadora);
             _context.SaveChanges();
 
         }
