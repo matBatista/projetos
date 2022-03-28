@@ -29,7 +29,6 @@ namespace Locadora.Controllers
         {
             RunAsync();
         }
-        
 
         public IActionResult Index()
         {
@@ -53,6 +52,27 @@ namespace Locadora.Controllers
             }
             return View(carro);
         }
+        public IActionResult Criar()
+        {
+            return View();
+        }
+        public async Task<IActionResult> Insert(Carro carro)
+        {
+            if (carro != null)
+            {
+                var content = carro;
+                HttpResponseMessage response = httpCarro.PostAsJsonAsync("/carros", content).Result;
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var dados = response.Content.ReadAsStringAsync();
+                }
+                return RedirectToAction(nameof(Index)); ;
+            }
+
+            return RedirectToAction(nameof(Index)); ;
+        }
+
         public IActionResult Editar(Guid id)
         {
             Carro carro = null;
@@ -89,39 +109,13 @@ namespace Locadora.Controllers
         {
             Carro carro = null;
             HttpResponseMessage response = httpCarro.DeleteAsync("/carros/" + id).Result;
-            
+
             if (response.IsSuccessStatusCode)
             {
                 var dados = response.Content.ReadAsStringAsync();
             }
             return RedirectToAction(nameof(Index)); ;
 
-        }
-
-        public IActionResult Criar()
-        {
-            return View();
-        }
-        public async Task<IActionResult> Insert([Bind("id,marca,modelo,ano,montadora,placa")] Carro carro)
-        {
-            if (carro != null)
-            {
-                var jsonContent = JsonConvert.SerializeObject(carro);
-
-                //var stringContent = jsonContent.ToString();
-                var content = new StringContent(jsonContent);
-                content.Headers.ContentType = new MediaTypeHeaderValue("appliaction/json");
-
-                HttpResponseMessage response = httpCarro.PostAsJsonAsync("/carros", content).Result;
-
-                if (response.IsSuccessStatusCode)
-                {
-                    var dados = response.Content.ReadAsStringAsync();
-                }
-                return RedirectToAction(nameof(Index)); ;
-            }
-
-            return RedirectToAction(nameof(Index)); ;
         }
 
 
