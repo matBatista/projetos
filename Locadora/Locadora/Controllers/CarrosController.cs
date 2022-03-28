@@ -41,7 +41,7 @@ namespace Locadora.Controllers
             }
             return View(listCarros);
         }
-        public IActionResult Detalhes(Guid id)
+        public IActionResult Details(Guid id)
         {
             Carro carro = null;
             HttpResponseMessage response = httpCarro.GetAsync("/carro/" + id).Result;
@@ -52,7 +52,7 @@ namespace Locadora.Controllers
             }
             return View(carro);
         }
-        public IActionResult Criar()
+        public IActionResult Create()
         {
             return View();
         }
@@ -73,7 +73,7 @@ namespace Locadora.Controllers
             return RedirectToAction(nameof(Index)); ;
         }
 
-        public IActionResult Editar(Guid id)
+        public IActionResult Edit(Guid id)
         {
             Carro carro = null;
             HttpResponseMessage response = httpCarro.GetAsync("/carro/" + id).Result;

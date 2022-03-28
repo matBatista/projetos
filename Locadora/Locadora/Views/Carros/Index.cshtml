@@ -7,7 +7,7 @@
 <div class="text-center">
     <h1 class="display-4">Carros para Alugar</h1>
     <br />
-    <div class="text-right"> <a asp-action="Criar">Criar</a> </div>
+    <div class="text-right"> <a asp-action="Create">Criar</a> </div>
     <table class="table">
         <thead>
             <tr>
@@ -49,8 +49,8 @@
                         @Html.DisplayFor(modelItem => item.montadora)
                     </td>
                     <td>
-                        <a asp-action="Detalhes" asp-route-id="@item.id">Detalhes</a> |
-                        <a asp-action="Editar" asp-route-id="@item.id">Editar</a> |
+                        <a asp-action="Details" asp-route-id="@item.id">Detalhes</a> |
+                        <a asp-action="Edit" asp-route-id="@item.id">Editar</a> |
                         <a asp-action="Delete" asp-route-id="@item.id">Deletar</a>
                     </td>
                 </tr>
