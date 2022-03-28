@@ -19,7 +19,7 @@ namespace Locadora.Controllers
         static HttpClient httpCarro = new HttpClient();
         static async Task RunAsync()
         {
-            httpCarro.BaseAddress = new Uri("https://localhost:44394");
+            httpCarro.BaseAddress = new Uri("https://localhost:44338");
             httpCarro.DefaultRequestHeaders.Accept.Clear();
             httpCarro.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/json"));
@@ -33,7 +33,7 @@ namespace Locadora.Controllers
         public IActionResult Index()
         {
             IEnumerable<Carro> listCarros = null;
-            HttpResponseMessage response = httpCarro.GetAsync("/carros").Result;
+            HttpResponseMessage response = httpCarro.GetAsync("/carro").Result;
             if (response.IsSuccessStatusCode)
             {
                 var dados = response.Content.ReadAsStringAsync();
@@ -44,7 +44,7 @@ namespace Locadora.Controllers
         public IActionResult Detalhes(Guid id)
         {
             Carro carro = null;
-            HttpResponseMessage response = httpCarro.GetAsync("/carros/" + id).Result;
+            HttpResponseMessage response = httpCarro.GetAsync("/carro/" + id).Result;
             if (response.IsSuccessStatusCode)
             {
                 var dados = response.Content.ReadAsStringAsync();
@@ -61,7 +61,7 @@ namespace Locadora.Controllers
             if (carro != null)
             {
                 var content = carro;
-                HttpResponseMessage response = httpCarro.PostAsJsonAsync("/carros", content).Result;
+                HttpResponseMessage response = httpCarro.PostAsJsonAsync("/carro", content).Result;
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -76,7 +76,7 @@ namespace Locadora.Controllers
         public IActionResult Editar(Guid id)
         {
             Carro carro = null;
-            HttpResponseMessage response = httpCarro.GetAsync("/carros/" + id).Result;
+            HttpResponseMessage response = httpCarro.GetAsync("/carro/" + id).Result;
             if (response.IsSuccessStatusCode)
             {
                 var dados = response.Content.ReadAsStringAsync();
@@ -93,7 +93,7 @@ namespace Locadora.Controllers
 
                 var stringContent = new StringContent(jsonContent, System.Text.Encoding.UTF8, "application/json");
                 HttpContent content = stringContent;
-                HttpResponseMessage response = httpCarro.PutAsync("/carros/" + carro.id, content).Result;
+                HttpResponseMessage response = httpCarro.PutAsync("/carro/" + carro.id, content).Result;
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -108,7 +108,7 @@ namespace Locadora.Controllers
         public IActionResult Delete(Guid id)
         {
             Carro carro = null;
-            HttpResponseMessage response = httpCarro.DeleteAsync("/carros/" + id).Result;
+            HttpResponseMessage response = httpCarro.DeleteAsync("/carro/" + id).Result;
 
             if (response.IsSuccessStatusCode)
             {
