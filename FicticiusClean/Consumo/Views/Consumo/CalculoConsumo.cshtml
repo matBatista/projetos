@@ -1,0 +1,74 @@
+﻿@model IEnumerable<Consumo.Models.CalculoConsumo>
+
+@{
+    ViewData["Title"] = "Lista de Consumos";
+}
+<br />
+<h1>Lista de Consumos</h1>
+<br />
+<hr />
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+            Pos
+            </th>
+            <th>
+                Nome
+            </th>
+            <th>
+                Marca
+            </th>
+            <th>
+                Modelo
+            </th>
+            <th>
+                Ano
+            </th>
+            <th>
+                Consumo KM
+            </th>
+            <th>
+                Consumo R$
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.posicao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.veiculo.nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.veiculo.marca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.veiculo.modelo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.veiculo.dataFabricacao.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.gastoTotalCombustivel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.gastoTotalValor)
+            </td>
+            
+        </tr>
+        }
+    </tbody>
+
+</table>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+

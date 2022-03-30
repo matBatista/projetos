@@ -1,0 +1,70 @@
+﻿@model IEnumerable<Consumo.Models.Veiculo>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bem-vindo a Fictcius Clean</h1>
+
+    <br />
+    <h1>Carros Disponiveis</h1>
+    <br />
+    <hr />
+    <br />
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Nome
+                </th>
+                <th>
+                    Marca
+                </th>
+                <th>
+                    Modelo
+                </th>
+                <th>
+                    Data Fabricacao
+                </th>
+                <th>
+                    Consumo Cidade
+                </th>
+                <th>
+                    Consumo Estrada
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.marca)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.modelo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.dataFabricacao)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.consumoCidade)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.consumoEstrada)
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+
+    </table>
+
+
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+

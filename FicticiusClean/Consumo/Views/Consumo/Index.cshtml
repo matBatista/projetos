@@ -1,0 +1,40 @@
+﻿@model Consumo.Models.CalculoConsumo
+
+@{
+    ViewData["Title"] = "Pagina para Calculo";
+}
+<div class="text-center">
+    <h1 class="display-3">Calcular Consumo dos Carros</h1>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="CalculoConsumo">
+                <div class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="kmPercorridoCidade" class="control-label"> KM Percorrida Cidade</label>
+                    <input asp-for="kmPercorridoCidade" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="kmPercorridoEstrada" class="control-label"> KM Percorrida Estrada</label>
+                    <input asp-for="kmPercorridoEstrada" class="form-control" />
+                    <span class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="precoGasolina" class="control-label"> R$ Gasolina</label>
+                    <input asp-for="precoGasolina" class="form-control" />
+                    <span class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Calcular" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+
