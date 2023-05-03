@@ -16,3 +16,44 @@ D:\Matheus\Trabalho 2\Barcode\ExcelToBarcode\bin\Debug\zxing.presentation.xml
 D:\Matheus\Trabalho 2\Barcode\ExcelToBarcode\obj\Debug\ExcelToBarcode.csproj.CopyComplete
 D:\Matheus\Trabalho 2\Barcode\ExcelToBarcode\obj\Debug\ExcelToBarcode.exe
 D:\Matheus\Trabalho 2\Barcode\ExcelToBarcode\obj\Debug\ExcelToBarcode.pdb
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\ExcelToBarcode.exe.config
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\ExcelToBarcode.exe
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\ExcelToBarcode.pdb
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\BouncyCastle.Crypto.dll
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\GemBox.Document.dll
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\zxing.dll
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\zxing.presentation.dll
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\GemBox.Document.xml
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\zxing.xml
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\zxing.presentation.xml
+D:\Git\projetos\Barcode\ExcelToBarcode\obj\Debug\ExcelToBarcode.csproj.AssemblyReference.cache
+D:\Git\projetos\Barcode\ExcelToBarcode\obj\Debug\ExcelToBarcode.formExcel.resources
+D:\Git\projetos\Barcode\ExcelToBarcode\obj\Debug\ExcelToBarcode.Properties.Resources.resources
+D:\Git\projetos\Barcode\ExcelToBarcode\obj\Debug\ExcelToBarcode.csproj.GenerateResource.cache
+D:\Git\projetos\Barcode\ExcelToBarcode\obj\Debug\ExcelToBarcode.csproj.CoreCompileInputs.cache
+D:\Git\projetos\Barcode\ExcelToBarcode\obj\Debug\ExcelToBarcode.csproj.CopyComplete
+D:\Git\projetos\Barcode\ExcelToBarcode\obj\Debug\ExcelToBarcode.exe
+D:\Git\projetos\Barcode\ExcelToBarcode\obj\Debug\ExcelToBarcode.pdb
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\DocumentFormat.OpenXml.xml
+D:\Git\projetos\Barcode\ExcelToBarcode\obj\Debug\ExcelToBarcode.csproj.ResolveComReference.cache
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\BarcodeStandard.dll
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\System.Buffers.dll
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\System.Drawing.Common.dll
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\System.Memory.dll
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\System.Numerics.Vectors.dll
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\System.Text.Encodings.Web.dll
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\System.Text.Json.dll
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\System.ValueTuple.dll
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\System.Buffers.xml
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\System.Memory.xml
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\System.Numerics.Vectors.xml
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\System.Text.Encodings.Web.xml
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\System.Text.Json.xml
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\System.ValueTuple.xml
