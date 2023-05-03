@@ -57,3 +57,7 @@ D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\System.Text.Encodings.Web.xml
 D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\System.Text.Json.xml
 D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\System.ValueTuple.xml
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\ExcelToBarcode.exe.manifest
+D:\Git\projetos\Barcode\ExcelToBarcode\bin\Debug\ExcelToBarcode.application
+D:\Git\projetos\Barcode\ExcelToBarcode\obj\Debug\ExcelToBarcode.exe.manifest
+D:\Git\projetos\Barcode\ExcelToBarcode\obj\Debug\ExcelToBarcode.application

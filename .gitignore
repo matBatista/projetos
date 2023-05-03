@@ -1,5 +1,9 @@
 
 Node/primeiro/node_modules/*
 Tarefas/ListadeTarefas/wwwroot/*
-*.exe
 
+Barcode/ExcelToBarcode/.vs/*
+Barcode/ExcelToBarcode/bin/*
+Barcode/Release/*
+Barcode/ExcelToBarcode/obj/*
+Barcode/ExcelToBarcode/Debug/*
