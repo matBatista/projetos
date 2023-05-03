@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "twuyNNC4lorTERbOO2ckg3zXVEF3g4t+K7qvjV+ztAbmnAEMp1Q3GdJHWis42CQks6T32nOgvZUMBF6FBcZkIQ==",
+  "success": true,
+  "projectFilePath": "D:\\Matheus\\Trabalho 2\\ChatApi\\ChatApi.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Batista\\.nuget\\packages\\fsharp.core\\5.0.0\\fsharp.core.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

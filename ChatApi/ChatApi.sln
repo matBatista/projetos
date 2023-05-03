@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33130.400
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ChatApi", "ChatApi.fsproj", "{211D7083-8AF9-481F-A020-70374C3C08FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{211D7083-8AF9-481F-A020-70374C3C08FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{211D7083-8AF9-481F-A020-70374C3C08FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{211D7083-8AF9-481F-A020-70374C3C08FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{211D7083-8AF9-481F-A020-70374C3C08FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2FFE26FB-BB8E-440F-BB47-966025118F11}
+	EndGlobalSection
+EndGlobal
