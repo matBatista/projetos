@@ -10,3 +10,4 @@ To gerenate the file barcode.docx
 
 You can download the .exe and execute the program.
 
+https://github.com/matBatista/projetos/raw/master/Barcode/Release.rar
