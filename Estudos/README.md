@@ -6,4 +6,4 @@
 </i></h6>
 
 - [Road map Azure](azure-roadmap.md)
-- [Road map dotNet](dot-net-roadmap.md)
+- [Road map DotNet](dot-net-roadmap.md)
