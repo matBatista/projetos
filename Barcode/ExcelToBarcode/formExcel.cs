@@ -107,10 +107,16 @@ namespace ExcelToBarcode
             foreach (Range row in range.Rows)
             {
                 Produto prod = new Produto();
-                prod.codigo = row.Cells[1,1].Value2.ToString();
-                prod.descricao = row.Cells[1,2].Value2.ToString();
+                
+                if (row.Cells[1, 1].Value2 != null)
+                {
+                    prod.codigo = row.Cells[1, 1].Value2.ToString();
+                    prod.descricao = row.Cells[1, 2].Value2.ToString();
 
-                listProdutos.Add(prod);
+
+                    if(!prod.codigo.ToString().ToUpper().Contains("CODIGO"))
+                        listProdutos.Add(prod);
+                }
             }
 
             // Close workbook and Excel application
@@ -177,42 +183,46 @@ namespace ExcelToBarcode
                     TableRow row = new TableRow();
                     for (int j = 0; j < columns; j++)
                     {
-                        TableCell cell = new TableCell(
-                            new TableCellProperties(new TableCellWidth() { Type = TableWidthUnitValues.Auto }));
 
-                        // Set the margins for the cell
-                        TableCellMargin margin = new TableCellMargin();
-                        margin.TopMargin = new TopMargin() { Width = "0.1in" };
-                        margin.BottomMargin = new BottomMargin() { Width = "0.2in" };
-                        margin.LeftMargin = new LeftMargin() { Width = "0.3in" };
-                        margin.RightMargin = new RightMargin() { Width = "0.3in" };
+                        if (prods != listProdutos.Count)
+                        {
+                            TableCell cell = new TableCell(
+                                new TableCellProperties(new TableCellWidth() { Type = TableWidthUnitValues.Auto }));
 
-                        cell.Append(new TableCellProperties(margin));
+                            // Set the margins for the cell
+                            TableCellMargin margin = new TableCellMargin();
+                            margin.TopMargin = new TopMargin() { Width = "0.1in" };
+                            margin.BottomMargin = new BottomMargin() { Width = "0.2in" };
+                            margin.LeftMargin = new LeftMargin() { Width = "0.3in" };
+                            margin.RightMargin = new RightMargin() { Width = "0.3in" };
 
-                        Paragraph paragraph = new Paragraph();
-                        Run run = new Run();
-                        paragraph.Append(run);
+                            cell.Append(new TableCellProperties(margin));
 
-                        Produto prod = listProdutos[prods];
-                        DW.Inline inline = DrawInlineObject(mainPart, prod);
+                            Paragraph paragraph = new Paragraph();
+                            Run run = new Run();
+                            paragraph.Append(run);
 
-                        run.Append(new Drawing(inline));
+                            Produto prod = listProdutos[prods];
+                            DW.Inline inline = DrawInlineObject(mainPart, prod);
 
-                        Run line = new Run(new Break());
-                        paragraph.Append(line);
+                            run.Append(new Drawing(inline));
 
-                        Run runtext = new Run(new Text(prod.descricao.ToUpper()));
-                        runtext.RunProperties = new RunProperties(
-                            new RunFonts() { Ascii = "Arial" },
-                            new FontSize() { Val = "14" },
-                            new Justification() { Val = JustificationValues.Left });
+                            Run line = new Run(new Break());
+                            paragraph.Append(line);
 
-                        paragraph.Append(runtext);
+                            Run runtext = new Run(new Text(prod.descricao.ToUpper()));
+                            runtext.RunProperties = new RunProperties(
+                                new RunFonts() { Ascii = "Arial" },
+                                new FontSize() { Val = "15" },
+                                new Justification() { Val = JustificationValues.Left });
 
-                        prods++;
+                            paragraph.Append(runtext);
 
-                        row.Append(cell);
-                        cell.Append(paragraph);
+                            prods++;
+
+                            row.Append(cell);
+                            cell.Append(paragraph);
+                        }
                     }
                     table.Append(row);
                 }
