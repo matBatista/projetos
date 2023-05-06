@@ -1,6 +1,6 @@
 ## Resources Azure
 
-> Link to a high azure road map to chose certificates path [Azure Certificate](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4wyqh)
+> Link to a high azure road map to chose Certifications [Microsoft Azure Certifications](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4wyqh)
 
 
 ## Azure Road Map 
