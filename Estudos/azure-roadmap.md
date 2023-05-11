@@ -12,3 +12,5 @@ Here is a full guide of study in microsoft web site [Study Guides](https://learn
 Learn About Azure IA with Microsft Courses [Azure IA](https://learn.microsoft.com/en-us/training/browse/?roles=ai-engineer&resource_type=learning%20path&wt.mc_id=esi_lxp_webpage_wwl)
 
 Link to practice tests and get certification [Enterprise Skills](https://esi.microsoft.com/getcertification)
+
+IBM Azure Skills [W3 IBM YouLearning](https://w3.ibm.com/services/gbslearn/futureskills/index.html?load=pages/modules/Build-Existing-Skills-Pages/hyperscalers.html)
