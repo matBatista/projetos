@@ -1,0 +1,43 @@
+Q. Which Azure Virtual Machine feature staggers updates across VMs based on their update domain and fault domain?
+A. Availability sets stagger VM updates based on their update and fault domains.
+
+Q. Which Azure service allows users to use a cloud hosted version of Windows from any location and connect from most modern browsers?
+A. Azure Virtual Desktop. Azure Virtual Desktop provides access to a cloud-hosted version of Windows, and it works with most modern browsers.
+
+Q. How many resource groups can a resource be in at the same time?
+A. One. A resource can only be in one group at a time.
+
+Q. What happens to the resources within a resource group when an action or setting at the Resource Group level is applied?
+A. The setting is applied to current and future resources. Resources inherit permissions from their resource group.
+
+Q. What Azure feature replicates resources across regions that are at least 300 miles away from each other?
+A. Region Pairs. Most Azure regions are paired with another region within the same geography (such as US, Europe, or Asia) at least 300 miles away.
+
+Q. What is cloud computing?
+A. Delivery of computing services over the internet. Cloud computing is the delivery of computing services over the internet.
+
+Q. Which cloud model uses some datacenters focused on providing cloud services to anyone that wants them, and some data centers that are focused on a single customer?
+A. Hybrid cloud The hybrid cloud model is a combination of public cloud and private cloud, using both datacenters dedicated solely to one customer and datacenters that are shared with the public.
+
+Q. According to the shared responsibility model, which cloud service type places the most responsibility on the customer?
+A. Infrastructure as a Service (IaaS) - IaaS places the most responsibility on the consumer, with the cloud provider being responsible for the basics of physical security, power, and connectivity.
+
+Q. Which one of the following tasks is the responsibility of a database administrator?
+A. Backing up and restoring databases. Database Administrators back up the database and restore it when data is lost or corrupted.
+
+Q. Which role is most likely to use Azure Data Factory to define a data pipeline for an ETL process?
+A. Data Engineer Data engineers create data pipelines.
+
+Q. Which single service would you use to implement data pipelines, SQL analytics, and Spark analytics?
+A. Azure Synapse Analytics includes native support for data pipelines, SQL, and Spark.
+
+Q. How is data in a relational table organized?
+A. Rows and Columns - Structured data is typically tabular data that is represented by rows and columns in a database table.
+
+Q. Which of the following is an example of unstructured data?
+A. Audio and Video files - Audio and video files are unstructured data.
+
+Q. What is a data warehouse?
+A. A relational database optimized for read operations
+That's correct. A data warehouse is a relational database in which the schema is optimized for queries that read data.
+
